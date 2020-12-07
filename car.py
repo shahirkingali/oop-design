@@ -19,3 +19,17 @@ class Wheel:
 # public
     def getQuality(self):
         return self.quality
+
+
+class Vehicle:
+#Constructor
+    def __init__(self, num_wheels, wheel_quality, engine):
+#composition
+        self._wheels = Wheels(num_wheels, wheel_quality)
+        self._engine = engine
+#public method
+    def printInfo(self):
+        print("Number of wheels:", self._wheels.getNumWheels())
+        print("Wheel Quality:", self._wheels.getQuality())
+        print("Engine Type:", self._engine)
+        print("\n")
