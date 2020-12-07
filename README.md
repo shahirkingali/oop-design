@@ -10,8 +10,9 @@ Wheel class has 2 attributes
     - vehicle class has 2 variables: 
           - wheel object 
           - engine
+
 Car class has 3 variables -> model name as well
 
 Truck class has 3 variable-> size, other variables from vehicle
 
-For the method I am using printinfo
+For the method I am using printinfo to display.
