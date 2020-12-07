@@ -33,3 +33,16 @@ class Vehicle:
         print("Wheel Quality:", self._wheels.getQuality())
         print("Engine Type:", self._engine)
         print("\n")
+
+class Truck(Vehicle):
+    #Constructor
+    def __init__(self, num_wheels, wheel_quality, engine, size):
+        Vehicle.__init__(self, num_wheels, wheel_quality, engine)
+        self.__size = size
+    #Override
+    def printInfo(self):
+        print("Number of wheels in truck:", self._wheels.getNumWheels())
+        print("Wheel Quality of truck:", self._wheels.getQuality())
+        print("Engine Type of truck:", self._engine)
+        print("Truck Size:", self.__size)
+        print("\n")
